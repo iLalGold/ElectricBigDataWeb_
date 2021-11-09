@@ -1,0 +1,100 @@
+.powerWrapper {
+  min-width: 1850px;
+}
+.leftContainer,
+.rightContainer,
+.mianContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.leftContainer,
+.rightContainer {
+  .charts1,
+  .charts2,
+  .charts3 {
+    width: 100%;
+    height: 338px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    position: relative;
+    background: url('./image/540＊330.png') no-repeat;
+    background-size: 100%;
+    box-sizing: border-box;
+    background-position: left top;
+    padding: 5px;
+    h2 {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+  }
+}
+.mianContainer {
+  .charts1 {
+    width: 100%;
+    height: 635px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding: 5px;
+  }
+  .charts2 {
+    width: 100%;
+    height: 390px;
+    box-sizing: border-box;
+    padding: 15px;
+    background: url('./image/775＊380.png') no-repeat;
+    background-size: 100%;
+    box-sizing: border-box;
+    background-position: left top;
+    display: flex;
+    flex-direction: column;
+    .table1 {
+      flex: 1;
+    }
+    .table2 {
+      flex: 1;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}
+.leftContainer {
+  .charts1 {
+    display: flex;
+    .charts {
+      flex: 2;
+      &:nth-child(3) {
+        flex: 3;
+      }
+    }
+  }
+  .charts2 {
+  }
+  .charts3 {
+  }
+}
+.rightContainer {
+  .charts1 {
+  }
+  .charts2 {
+  }
+  .charts3 {
+  }
+}
+
+.chartWrapper {
+  padding: 0;
+}
+.charts {
+  padding: 0;
+}
+.filterBox {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+/deep/.ivu-table-overflowY::-webkit-scrollbar {
+  display: none !important;
+}
